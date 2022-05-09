@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_cartelera">
+    <fragment
+        android:id="@+id/navigation_ticket"
+        android:name="vs.layour.ponycine_fragmentsydb.ui.Ticket"
+        android:label="Mis Entradas"
+        tools:layout="@layout/ticket_fragment" />
+    <fragment
+        android:id="@+id/navigation_cartelera"
+        android:name="vs.layour.ponycine_fragmentsydb.ui.Cartelera"
+        android:label="Cartelera De Hoy"
+        tools:layout="@layout/cartelera_fragment" >
+        <action
+            android:id="@+id/action_navigation_cartelera_to_navigation_horario"
+            app:destination="@id/navigation_horario"
+            app:popUpTo="@id/navigation_cartelera" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_horario"
+        android:name="vs.layour.ponycine_fragmentsydb.ui.SelectHorario"
+        android:label="select_horario_fragment"
+        tools:layout="@layout/select_horario_fragment" >
+        <action
+            android:id="@+id/action_navigation_horario_to_navigation_ticket"
+            app:destination="@id/navigation_ticket" />
+    </fragment>
+</navigation>
