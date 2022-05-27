@@ -6,12 +6,12 @@
     app:startDestination="@id/navigation_cartelera">
     <fragment
         android:id="@+id/navigation_ticket"
-        android:name="vs.layour.ponycine_fragmentsydb.ui.Ticket"
+        android:name="com.example.proyecto.ui.Ticket"
         android:label="Mis Entradas"
         tools:layout="@layout/ticket_fragment" />
     <fragment
         android:id="@+id/navigation_cartelera"
-        android:name="vs.layour.ponycine_fragmentsydb.ui.Cartelera"
+        android:name="com.example.proyecto.ui.Cartelera"
         android:label="Cartelera De Hoy"
         tools:layout="@layout/cartelera_fragment" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_horario"
-        android:name="vs.layour.ponycine_fragmentsydb.ui.SelectHorario"
+        android:name="com.example.proyecto.ui.SelectHorario"
         android:label="select_horario_fragment"
         tools:layout="@layout/select_horario_fragment" >
         <action

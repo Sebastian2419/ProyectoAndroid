@@ -43,19 +43,16 @@ class Cartelera : Fragment() {
         horariopelicula.add(ListHorario("14:00","15 May 2022"))
         horariopelicula.add(ListHorario("15:00","16 May 2022"))
         horariopelicula.add(ListHorario("16:00","16 May 2022"))
-        horariopelicula.add(ListHorario("17:00","16 May 2022"))
         horariopelicula.add(ListHorario("18:00","17 May 2022"))
 
 
         val listpelis = ArrayList<ListPelicula>()
-        listpelis.add(ListPelicula("12 horas para sobrevivir.", "A",R.drawable._2_horas_para_sobrevivir,"Descripcion", horariopelicula ))
-        listpelis.add(ListPelicula("Birds of prey.", "A",R.drawable.birds_of_prey,"Descripcion",horariopelicula ))
-        listpelis.add(ListPelicula("Fragmentado.", "A",
-            R.drawable.fragmentado,"Descripcion", horariopelicula))
-        listpelis.add(ListPelicula("Godzilla vs Kong.", "A",R.drawable.godzilla_vs_kong,"Descripcion", horariopelicula ))
-        listpelis.add(ListPelicula("Joker.", "A",R.drawable.joker,"Descripcion", horariopelicula ))
-        listpelis.add(ListPelicula("Scooby.", "A",R.drawable.scooby,"Descripcion", horariopelicula ))
-        listpelis.add(ListPelicula("Sonic.", "A",R.drawable.sonic,"Descripcion", horariopelicula ))
+        listpelis.add(ListPelicula("Doctor Strange", "A",R.drawable.doctor,"Descripcion", horariopelicula ))
+        listpelis.add(ListPelicula("Sonic 2", "A",R.drawable.sonic2,"Descripcion",horariopelicula ))
+        listpelis.add(ListPelicula("The Batman", "A",R.drawable.batman,"Descripcion", horariopelicula))
+        listpelis.add(ListPelicula("Llamas De Venganza", "A",R.drawable.venganza,"Descripcion", horariopelicula ))
+        listpelis.add(ListPelicula("Joker", "A",R.drawable.joker,"Descripcion", horariopelicula ))
+        listpelis.add(ListPelicula("El Peso Del Talento", "A",R.drawable.talento,"Descripcion", horariopelicula ))
 
         //RECICLER
         binding.rvCartelera.adapter = object : CarteleraAdapter(view.context, listpelis, R.layout.pelicula_cardview){
